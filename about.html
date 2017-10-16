@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tyler Bissmeyer | Photographer</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+	<header>
+		<a href="index.html">
+		<h1>TYLER BISSMEYER</h1>
+		<h2>Photographer</h2>
+		</a>
+		<nav>
+			<ul>
+				<li><a href="index.html">Portfolio</a></li>
+				<li><a href="about.html" class="selected">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<div id="bioImageWrapper" onclick="toggleBioSize()" style="float:left;" >
+		<img src="img/About.gif" alt="" id="bioImage"  />
+		</div>
+		<div id="bioTextWrapper" class="bio-text-none" style="float:left;">
+		<b>Bio</b>
+		Tyler Bissmeyer
+		Photographer
+		</div>
+	</section>
+	<footer>
+		<a href="https://www.facebook.com/tyler.bissmeyer"> <img src="img/facebook-wrap.png" alt="Facebooklogo" class="social-icon"></a>
+		<a href="https://www.instagram.com/tbissm/"> <img src="img/instagram_PNG16.png" alt="Instagram Logo" class="social-icon"></a>
+		<p>&copy; 2017 Tyler Bissmeyer.</p>
+	</footer>
+	<script type="text/javascript">
+		var full = true;
+
+		function toggleBioSize()
+		{
+			var bioImageWrapper = document.getElementById("bioImageWrapper");
+			var bioImage = document.getElementById("bioImage");
+			var bioTextWrapper = document.getElementById("bioTextWrapper");
+
+			if (full)
+			{
+				bioImageWrapper.className = "bio-wrapper-half";
+				bioImage.className = "bio-image-half";
+				bioTextWrapper.className ="bio-text-half";
+			}
+			else
+			{
+				bioImageWrapper.className = "bio-wrapper-full";
+				bioImage.className = "bio-image-full";
+				bioTextWrapper.className ="bio-text-none";
+			}
+
+			full = !full;
+		}
+	</script>
+	<style type="text/css">
+#bioImageWrapper
+{
+	cursor: pointer;
+}
+
+	.bio-wrapper-half
+	{
+		overflow: hidden;
+		animation-name: bioAnimation;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+		@-webkit-keyframes bioAnimation {
+    	from {width: 100%;}
+    	to {width:  50%;}
+    }
+
+    .bio-wrapper-full
+	{
+		overflow: hidden;
+		animation-name: bioAnimationFull;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+		height: 563px;
+	}
+		@-webkit-keyframes bioAnimationFull {
+    	from {width: 50%;}
+    	to {width:  100%;}
+    }
+
+    .bio-image-half
+	{
+		position: relative;
+		animation-name: bioImageAnimation;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+		@-webkit-keyframes bioImageAnimation {
+    	from {left: 0px;}
+    	to {left:  -115px;}
+    }
+
+        .bio-image-full
+	{
+		position: relative;
+		animation-name: bioImageAnimationFull;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+		@-webkit-keyframes bioImageAnimationFull {
+    	from {left: -115px;}
+    	to {left:  0px;}
+    }
+
+    	.bio-text-none
+	{
+		animation-name: bioTextAnimationNone;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+		@-webkit-keyframes bioTextAnimationNone {
+    	from {width: 50%;}
+    	to {width: 0%;}
+    }
+
+    	.bio-text-half
+	{
+		animation-name: bioTextAnimationHalf;
+		animation-duration: 2s;
+		animation-fill-mode: forwards;
+	}
+		@-webkit-keyframes bioTextAnimationHalf {
+    	from {width: 0%;}
+    	to {width:  50%;}
+    }
+    </style>
+	</body>
+</html>
