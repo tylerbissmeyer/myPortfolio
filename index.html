@@ -7,47 +7,43 @@
 		<title>Tyler Bissmeyer | Photographer</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-		
-	</head>
-	<body onload="loadSlides() {
-          showSlides(1);
-        }''>
-	<header>
-  <a href="index.html">
-	<h1>Tyler Bissmeyer</h1>
-  <div class="container">
-  <div class="dropdown">
-   <a href="index.html">
-  <button class="dropbtn" href="index.html">Portfolio</button>
-  </a>
-</div>
-<div class="dropdown">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+   </head>
+ 
+<header class="header">
+
+    <nav class="menu">
+      
+      <a href="index.html" class="header__logo">Tyler Bissmeyer</a>
+      <div class="menuNav">
+      <div class="dropdown">
   <button class="dropbtn">Galleries</button>
   <div class="dropdown-content">
     <a href="about.html">Travel</a>
-    <a href="#">Portraits</a>
+    <a href="people.html">People</a>
     <a href="#">Commercial</a>
   </div>
-</div>
-<div class="dropdown">
-<a href="about.html">
-  <button class="dropbtn">About</button>
-  <a href="about.html">
-  <div class="dropdown-content">
-  </div>
-</div>
 
-<div class="dropdown">
-  <button class="dropbtn">Contact</button>
-  <div class="dropdown-content">
- </div>
-</div>
-</div>
- </header>
-	<section>
+  <a href="index.html">Portfolio</a>
+        
+      <a href="about.html" class="about_menu">About</a>
+      <a href="#" class="contact_menu">Contact</a>
+  </div><!--end menu nav-->
+      </nav>
+      </header>
+
   
-		<div class="slideshow-container">
-  <div class="mySlides fade">
+
+<body onload="loadSlides() {
+          showSlides(1);
+        }''>
+        
+
+		
+    <div class="slideshow-container">
+ <div class="mySlides fade">
     <div class="numbertext">1 / 23</div>
     <img src="img/Portfolio01.JPG" style="width:100%">
     <div class="text"></div>
@@ -85,7 +81,7 @@
 
     <div class="mySlides fade">
     <div class="numbertext">7 / 23</div>
-    <img src="img/Portfolio11.JPG" style="height: 100%" align="center">
+    <img src="img/Portfolio11.JPG" style="width:100%">
     <div class="text"></div>
   </div>
 
@@ -184,9 +180,12 @@
     <img src="img/Portfolio28.JPG" style="width:100%">
     <div class="text"></div>
   </div>
+  <div id="nextArrows">
  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
 </div>
+
 <br>
 
 <div style="text-align:center">
@@ -216,13 +215,15 @@
  </div>
 
 		
-	</section>
+	
 	<footer>
 		<a href="https://www.facebook.com/tyler.bissmeyer"> <img src="img/facebook-wrap.png" alt="Facebooklogo" class="social-icon"></a>
 		<a href="https://www.instagram.com/tbissm/"> <img src="img/instagram_PNG16.png" alt="Instagram Logo" class="social-icon"></a>
 		<p>&copy; 2017 Tyler Bissmeyer.</p>
 	</footer>
   <script src="scripts.js"></script>
-   <script type="text/javascript">   
+   <script type="text/javascript"></script>
+   <script src="jquery-3.2.1.min.js"></script>
+   <script src="menu.js"></script> 
 	</body>
 </html>

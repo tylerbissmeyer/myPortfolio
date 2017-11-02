@@ -7,37 +7,57 @@
 		<title>Tyler Bissmeyer | Photographer</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-	<header>
-		<a href="index.html">
-		<h1>TYLER BISSMEYER</h1>
-		<h2>Photographer</h2>
-		</a>
-		<nav>
-			<ul>
-				<li><a href="index.html">Portfolio</a></li>
-				<li><a href="about.html" class="selected">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<section>
-		<div id="bioImageWrapper" onclick="toggleBioSize()" style="float:left;" >
-		<img src="img/About.gif" alt="" id="bioImage"  />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+    </head>
+		  
+<header class="header">
+    <nav class="menu">
+      <a href="#" class="header__icon" id="header__icon"></a>
+      <a href="index.html" class="header__logo">Tyler Bissmeyer</a>
+      <div class="menuNav">
+      <div class="dropdown">
+  <button class="dropbtn">Galleries</button>
+  <div class="dropdown-content">
+    <a href="about.html">Travel</a>
+    <a href="people.html">People</a>
+    <a href="#">Commercial</a>
+  </div>
+  <a href="index.html">Portfolio</a>
+        
+      <a href="about.html" class="about_menu">About</a>
+      <a href="#" class="contact_menu">Contact</a>
+  </div><!--end menu nav-->
+      </nav>
+      </header>
+
+    
+
+	<section> 
+	<div id="contentWrapper">
+		<div id="bioImageWrapper" onclick="toggleBioSize()" style="float:left;">
+		<img src="img/About.gif" alt="" id="bioImage"/>
 		</div>
 		<div id="bioTextWrapper" class="bio-text-none" style="float:left;">
 		<b>Bio</b>
-		Tyler Bissmeyer
-		Photographer
+		<p>A graduate of Western Kentucky University's photojournalism program, Tyler Bissmeyer now lives in Louisville, Ky. He is available for assignments regionally and nationally.  Tyler's work has been published in the Associated Press, The Courier-Journal, The New York Times, and the Wall Street Journal. </p>
 		</div>
+		
+		</div> <!-- END container -->
+		</div> <!-- END site-container -->
+
+    </div> <!-- END site-content -->
+    </div> <!-- END site-pusher -->
+</div> <!-- END contentWrapper-->
 	</section>
-	<footer>
-		<a href="https://www.facebook.com/tyler.bissmeyer"> <img src="img/facebook-wrap.png" alt="Facebooklogo" class="social-icon"></a>
-		<a href="https://www.instagram.com/tbissm/"> <img src="img/instagram_PNG16.png" alt="Instagram Logo" class="social-icon"></a>
-		<p>&copy; 2017 Tyler Bissmeyer.</p>
-	</footer>
+	
+
+	
 	<script type="text/javascript">
+
+
+
 		var full = true;
 
 		function toggleBioSize()
@@ -61,11 +81,24 @@
 
 			full = !full;
 		}
+
+
+
 	</script>
+	
 	<style type="text/css">
-#bioImageWrapper
+
+
+
+#bioImageWrapper:hover
 {
-	cursor: pointer;
+	cursor: e-resize;
+	  -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+
+
+
+	
 }
 
 	.bio-wrapper-half
@@ -74,6 +107,7 @@
 		animation-name: bioAnimation;
 		animation-duration: 2s;
 		animation-fill-mode: forwards;
+
 	}
 		@-webkit-keyframes bioAnimation {
     	from {width: 100%;}
@@ -92,6 +126,7 @@
     	from {width: 50%;}
     	to {width:  100%;}
     }
+  
 
     .bio-image-half
 	{
@@ -111,6 +146,8 @@
 		animation-name: bioImageAnimationFull;
 		animation-duration: 2s;
 		animation-fill-mode: forwards;
+		
+		
 	}
 		@-webkit-keyframes bioImageAnimationFull {
     	from {left: -115px;}
@@ -139,5 +176,6 @@
     	to {width:  50%;}
     }
     </style>
+   <script src="jquery-3.2.1.min.js"></script>
 	</body>
 </html>
