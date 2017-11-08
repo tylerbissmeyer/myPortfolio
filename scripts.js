@@ -30,5 +30,33 @@ function showSlides(n) {
 }
 
 /**********************************
-NAVIGATION MENU
+VALIDATE FORM
 ***********************************/
+
+
+
+
+function validateForm(formsCheck) {
+  var formFields = ["user_name", "user_email", "user_phone", "user_subject", "user_message"];
+  debugger;
+  var errors = "";
+
+  for (i = 0; i < formFields.length; i++) { 
+      var x = document.forms["myForm"][formFields[i]].value;
+      if (x == "") {
+        var labelName = document.getElementById(formFields[i] + '_lbl').innerText.replace(":","");
+        errors +=  '- ' + labelName + ' is required.\n'
+    }
+  }
+
+  if (errors != "")
+  {
+    alert(message);
+    return false;
+  }
+  
+
+}
+
+
+
