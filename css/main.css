@@ -211,14 +211,6 @@ Slideshow CSS
 }
 
 
-
-
-
-
-
-
-
-
 /**********************************
 FOOTER
 ***********************************/
@@ -238,19 +230,8 @@ footer {
 }
 
 /*************************************
-Responsive  Nav and Previous and Next
+Responsive  Navigation
 ************************************/
-
-@media (max-width: 1024px) {
-    .prev, .next {
-     top: 40%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
-
 
 @media (max-width: 909px) {
    .menuNav {
@@ -262,23 +243,9 @@ Responsive  Nav and Previous and Next
    .menuNav {
    margin-left: 18%;
   }
-  .prev, .next {
-     top: 40%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
 }
 
-@media (max-width: 768px) {
-    .prev, .next {
-     top: 30%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
+
 
 @media (max-width: 658px) {
    .menuNav {
@@ -287,37 +254,7 @@ Responsive  Nav and Previous and Next
 
 }
 
-@media (max-width: 498px) {
-    .prev, .next {
-     top: 30%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
 
-
-@media (max-width: 414px) {
-    .prev, .next {
-     top: 19%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
-
-
-@media (max-width: 192px) {
-    .prev, .next {
-     top: 19%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
 
 
 

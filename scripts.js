@@ -38,7 +38,7 @@ VALIDATE FORM
 
 function validateForm(formsCheck) {
   var formFields = ["user_name", "user_email", "user_phone", "user_subject", "user_message"];
-  debugger;
+  
   var errors = "";
 
   for (i = 0; i < formFields.length; i++) { 
@@ -51,12 +51,13 @@ function validateForm(formsCheck) {
 
   if (errors != "")
   {
-    alert(message);
+    alert(errors);
     return false;
   }
   
 
 }
+// debugger;
 
 
 
