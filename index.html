@@ -11,8 +11,9 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
 </head>
-
+<!--Show the first Image-->
 <body onload="showSlides(1);">
+  <div class="containerFlex">
   <header class="header">
     <nav class="menu">
       <a href="index.html" class="header__logo">Tyler Bissmeyer</a>
@@ -32,6 +33,7 @@
       </div><!--end menu nav-->
     </nav>
   </header>
+  </div> <!--end of flex div-->
 
   <div class="slideshow-container">
     <div class="mySlides fade">
@@ -171,7 +173,7 @@
       <img src="img/Portfolio28.JPG" style="width:100%">
       <div class="text"></div>
     </div>
-
+    <!--adding next arrows that advance each image-->
     <div id="nextArrows">
      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
      <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -179,7 +181,7 @@
   </div>
 
   <br/>
-
+  <!--adding dots that advance each image-->
   <div style="text-align: center;">
     <span class="dot" onclick="currentSlide(1)"></span> 
     <span class="dot" onclick="currentSlide(2)"></span> 
@@ -205,13 +207,12 @@
     <span class="dot" onclick="currentSlide(22)"></span> 
     <span class="dot" onclick="currentSlide(23)"></span>
   </div>
-
+<!--Facebook and Instagram Icon links-->
   <footer>
     <a href="https://www.facebook.com/tyler.bissmeyer"> <img src="img/facebook-wrap.png" alt="Facebooklogo" class="social-icon"></a>
     <a href="https://www.instagram.com/tbissm/"> <img src="img/instagram_PNG16.png" alt="Instagram Logo" class="social-icon"></a>
     <p>&copy; 2017 Tyler Bissmeyer.</p>
   </footer>
-
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>

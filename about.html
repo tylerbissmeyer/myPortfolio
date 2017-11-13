@@ -22,9 +22,8 @@
 					<div class="dropdown-content">
 						<a href="people.html">People</a>
 						<a href="places.html">Places</a>
-						<a href="#">Commercial</a>
+						<a href="recent.html">Recent</a>
 					</div>
-
 					<a href="index.html">Portfolio</a>
 					<a href="about.html" class="about_menu">About</a>
 					<a href="contact.html" class="contact_menu">Contact</a>
@@ -32,11 +31,7 @@
 			</div><!--end menu nav-->
 		</nav>
 	</header>
-
-
-
-
-	<section> 
+<section> 
 		<div id="contentWrapper">
 			<div id="bioImageWrapper" onclick="toggleBioSize()">
 				<img src="img/About.gif" alt="" id="bioImage" />
@@ -50,30 +45,30 @@
 			</div>
 		</div>
 
-	</section>
-	
-
-	
+</section>
 	<script type="text/javascript">
 
 
 
 		var full = true;
-
+		/* On Click fire function using css animation to slide bioText into gif image and slide out*/
 		function toggleBioSize()
 		{
+			/* Searches Dom for Ids and stores value in assigned variable */
 			var bioImageWrapper = document.getElementById("bioImageWrapper");
 			var bioImage = document.getElementById("bioImage");
 			var bioTextWrapper = document.getElementById("bioTextWrapper");
 
 			if (full)
 			{
+				/* BioImage slides left, and BioTextWrapper slides in 50%*/
 				bioImageWrapper.className = "bio-wrapper-half";
 				bioImage.className = "bio-image-half";
 				bioTextWrapper.className ="bio-text-half";
 			}
 			else
 			{
+				/* BioImage slides to full, and BioTextWrapper slides right 50%*/
 				bioImageWrapper.className = "bio-wrapper-full";
 				bioImage.className = "bio-image-full";
 				bioTextWrapper.className ="bio-text-none";
@@ -88,22 +83,24 @@
 			display: flex;
 		}
 
-		#contentWrapper > div {
-
-		}
-
+		
+		/* BioImage width 100% viewport width*/
 		#bioImage { width: 100vw; }
 
+		/* On hover, turn gif grayscale, and cursor point right to suggest more content*/
 		#bioImageWrapper:hover
 		{
 			cursor: e-resize;
 			-webkit-filter: grayscale(100%); 
 			filter: grayscale(100%);
 		}
-
+		/* BioImage width 100% viewport width*/
 		#bioTextWrapper {
 			overflow: hidden;
 		}
+/*************************************
+CSS Animation
+************************************/
 
 		.bio-wrapper-half
 		{
@@ -183,6 +180,7 @@
 			from {width: 0%;}
 			to {width:  50%;}
 		}
+
 	</style>
 
 </body>
