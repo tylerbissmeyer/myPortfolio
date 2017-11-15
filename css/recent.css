@@ -150,11 +150,11 @@ only screen and (max-device-width : 811px){
     -webkit-column-gap: 0px;
     column-count: 4;
     column-gap: 0px;
-    width: 600px;
+    width: 700px;
   }
   
   #container {
-    width: 600px;
+    width: 800px;
   }
 }
  
@@ -171,9 +171,45 @@ only screen and (max-device-width : 599px){
   }
   
   #container {
+    width: 599px;
+  }
+}
+
+@media only screen and (max-width : 514px),
+only screen and (max-device-width : 514px){
+  #myContent {
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+    width: 400px;
+  }
+  
+  #container {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width : 400px),
+only screen and (max-device-width : 400px){
+  #myContent {
+    -moz-column-count: 2;
+    -moz-column-gap: 0px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 0px;
+    column-count: 2;
+    column-gap: 0px;
+    width: 300px;
+  }
+  
+  #container {
     width: 400px;
   }
 }
+
+
 
 /**********************************
 FOOTER
@@ -194,18 +230,10 @@ footer {
 }
 
 /*************************************
-Responsive  Nav and Previous and Next
+Responsive  Nav Menu
 ************************************/
 
-@media (max-width: 1024px) {
-    .prev, .next {
-     top: 40%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
+
 
 
 @media (max-width: 909px) {
@@ -218,59 +246,16 @@ Responsive  Nav and Previous and Next
    .menuNav {
    margin-left: 18%;
   }
-  .prev, .next {
-     top: 40%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-    .prev, .next {
-     top: 30%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
 }
 
 @media (max-width: 658px) {
    .menuNav {
    margin-left: 10%;
   }
-
-}
-
-@media (max-width: 498px) {
-    .prev, .next {
-     top: 30%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
 }
 
 
-@media (max-width: 414px) {
-    .prev, .next {
-     top: 19%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
 
 
-@media (max-width: 192px) {
-    .prev, .next {
-     top: 19%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  }
-  
-}
+
+
